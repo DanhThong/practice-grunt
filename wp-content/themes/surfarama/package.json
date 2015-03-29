@@ -1,5 +1,5 @@
 {
-    "name": "learning site",
+    "name": "learning-site",
     "version" : "0.0.1",
     "description": "Minify CSS, JS",
     "main": "Gruntfile.js",
