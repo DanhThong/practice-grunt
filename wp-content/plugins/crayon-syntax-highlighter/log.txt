@@ -1,0 +1,62 @@
+
+[Crayon Syntax Highlighter Log Entry - 5:15:41 PM - 21 Mar 2015]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 5:16:09 PM - 21 Mar 2015]
+
+ [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+
+[Crayon Syntax Highlighter Log Entry - 5:16:23 PM - 21 Mar 2015]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 5:16:47 PM - 21 Mar 2015]
+
+ [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+
+[Crayon Syntax Highlighter Log Entry - 5:16:58 PM - 21 Mar 2015]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 5:17:49 PM - 21 Mar 2015]
+
+ [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+
+[Crayon Syntax Highlighter Log Entry - 5:18:02 PM - 21 Mar 2015]
+
+ [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+
+[Crayon Syntax Highlighter Log Entry - 5:18:17 PM - 21 Mar 2015]
+
+ [CrayonUtil::lines()] 'Cannot read lines at \'/langs/go/statement.txt\'.'
+ [SYSTEM LOG] 'Parsing of \'/langs/go/go.txt\' failed, an (?alt) tag failed for the element \'STATEMENT\''
+
+[Crayon Syntax Highlighter Log Entry - 5:19:05 PM - 21 Mar 2015]
+
+ [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+
+[Crayon Syntax Highlighter Log Entry - 5:19:40 PM - 21 Mar 2015]
+
+ [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'
+
+[Crayon Syntax Highlighter Log Entry - 5:20:23 PM - 21 Mar 2015]
+
+ [SYSTEM LOG] 'Upload directory is empty:  cannot load languages.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'\'.'
+ [CrayonUtil::lines()] 'Cannot read lines at \'default/default.txt\'.'

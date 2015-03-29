@@ -1,2 +1,2 @@
-# practice-grunt
-Practice some thing learn from Jon
+# learn-grunt
+Learn Grunt to create teamplate
