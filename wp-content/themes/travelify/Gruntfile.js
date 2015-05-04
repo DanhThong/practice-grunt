@@ -22,4 +22,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.registerTask('default', ['compass:dev', 'cssmin:dev']);
+    grunt.registerTask('dev', 'For developers', function() {
+        grunt.task.run('compass:dev');
+    });
 };
