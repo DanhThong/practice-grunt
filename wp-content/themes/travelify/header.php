@@ -30,8 +30,6 @@
 		 * This hook is important for WordPress plugins and other many things
 		 */
 		wp_head();
-		// Add main.css
-		wp_enqueue_style("main-css", get_stylesheet_directory_uri() . '/css/main.css');
 	?>
 
 </head>
