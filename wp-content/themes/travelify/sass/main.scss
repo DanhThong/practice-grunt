@@ -11,6 +11,20 @@ Tags: white, light, green , custom-background, custom-header, custom-menu, fluid
 Text Domain: travelify
  */
 
+@mixin boxsize($box_style) {
+    -webkit-box-sizing: $box_style;
+       -moz-box-sizing: $box_style;
+        -ms-box-sizing: $box_style;
+            box-sizing: $box_style;
+}
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
+}
+
 @import 'common';
 
 @import 'heading';
