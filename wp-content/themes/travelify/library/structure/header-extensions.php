@@ -327,8 +327,9 @@ function travelify_featured_post_slider() {
 
 	global $travelify_theme_options_settings;
   	$options = $travelify_theme_options_settings;
-
-  $travelify_featured_post_slider = '';
+  	// ThongDang
+  	// TODO: will show slider from latest featured post
+  	$travelify_featured_post_slider = '';
 	if (!empty( $options[ 'featured_post_slider' ] ) ) {
 		$travelify_featured_post_slider .= '
 		<section class="featured-slider"><div class="slider-cycle">';
