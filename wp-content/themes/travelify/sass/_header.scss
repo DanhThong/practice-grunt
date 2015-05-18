@@ -1,0 +1,41 @@
+/* =Header
+-----------------------------------------------*/
+#branding {
+    margin-top: 15px;
+}
+.hgroup-wrap {
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
+.hgroup-wrap a {
+    display: block;
+}
+#site-logo {
+    float: left;
+    margin-top: 32px;
+}
+#site-title {
+    font: 36px 'Ubuntu', sans-serif;
+    line-height: 42px;
+}
+#site-title a {
+    color: #57ad68;
+    letter-spacing: -2px;
+}
+#site-title a img {
+    vertical-align: inherit;
+    max-width: 978px;
+}
+#site-title a span,#site-title a:hover,#site-title a:focus,#site-title a:active {
+    color: #439f55;
+}
+#site-description {
+    font: 14px helvetica, sans-serif;
+    line-height: 20px;
+    color: #999;
+    font-weight: 200;
+}
+.hgroup-right {
+    float: right;
+    margin-top: 38px;
+}
