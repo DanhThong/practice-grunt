@@ -186,21 +186,21 @@ function travelify_headerdetails() {
 					<?php
 						if( $options[ 'header_show' ] != 'disable-both' && $options[ 'header_show' ] == 'header-text' ) {
 						?>
-							<h1 id="site-title">
+							<!-- <h1 id="site-title"> -->
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 									<?php bloginfo( 'name' ); ?>
 								</a>
-							</h1>
-							<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+							<!-- </h1> -->
+							<!-- <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2> -->
 						<?php
 						}
 						elseif( $options[ 'header_show' ] != 'disable-both' && $options[ 'header_show' ] == 'header-logo' ) {
 						?>
-							<h1 id="site-title">
+							<!-- <h1 id="site-title"> -->
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 									<img src="<?php echo $options[ 'header_logo' ]; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 								</a>
-							</h1>
+							<!-- </h1> -->
 						<?php
 						}
 						?>
@@ -255,7 +255,7 @@ function travelify_headerdetails() {
 					if ( function_exists('yoast_breadcrumb') ) {
 						yoast_breadcrumb('<p id="breadcrumbs">','</p>');
 					} ?>
-				   <h3 class="page-title"><?php echo travelify_header_title(); ?></h3><!-- .page-title -->
+				   <h1 class="page-title"><?php echo travelify_header_title(); ?></h1><!-- .page-title -->
 				</div>
 	    	</div>
 	   <?php
@@ -327,8 +327,19 @@ function travelify_featured_post_slider() {
 
 	global $travelify_theme_options_settings;
   	$options = $travelify_theme_options_settings;
-  	// ThongDang
-  	// TODO: will show slider from latest featured post
+    // Get post list show on slider
+  	$args = array(
+		'meta_key'    => 'show_on_home_slider',
+		'meta_value'  => 1,
+		'orderby'     => 'meta_id',
+		'order'       => 'ASC'
+	);
+  	$data = query_posts($args);
+  	if (have_posts()) :
+	    while (have_posts()) : the_post();
+	        $post_id[] = get_the_ID() ;
+	    endwhile;
+	endif;
   	$travelify_featured_post_slider = '';
 	if (!empty( $options[ 'featured_post_slider' ] ) ) {
 		$travelify_featured_post_slider .= '
@@ -336,7 +347,7 @@ function travelify_featured_post_slider() {
 			$get_featured_posts = new WP_Query( array(
 				'posts_per_page' 		    => $options[ 'slider_quantity' ],
 				'post_type'					    => array( 'post', 'page' ),
-				'post__in'		 			    => $options[ 'featured_post_slider' ],
+				'post__in'		 			    => $post_id, //$options[ 'featured_post_slider' ],
 				'orderby' 		 			    => 'post__in',
 				'suppress_filters' 	    => false,
 				'ignore_sticky_posts' 	=> 1 						// ignore sticky posts
