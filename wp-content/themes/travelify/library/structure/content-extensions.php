@@ -139,7 +139,7 @@ function travelify_theloop_for_archive() {
 
   			<div class="entry-meta-bar clearfix">
     			<div class="entry-meta">
-	    				<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
+	    				<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php echo esc_attr( get_the_time() ); ?>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?></a></span>
 	    				<?php if( has_category() ) { ?>
 	             		<span class="category"><?php the_category(', '); ?></span>
 	             	<?php } ?>
@@ -269,7 +269,7 @@ function travelify_theloop_for_single() {
 
   			<div class="entry-meta-bar clearfix">
     			<div class="entry-meta">
-	    				<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
+	    				<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php echo esc_attr( get_the_time() ); ?>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?></a></span>
 	    				<?php if( has_category() ) { ?>
 	             		<span class="category"><?php the_category(', '); ?></span>
 	             	<?php } ?>
@@ -452,7 +452,7 @@ function travelify_theloop_for_template_blog_image_large() {
 
   			<div class="entry-meta-bar clearfix">
     			<div class="entry-meta">
-	    				<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
+	    				<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php echo esc_attr( get_the_time() ); ?>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?></a></span>
 	    				<?php if( has_category() ) { ?>
 	             		<span class="category"><?php the_category(', '); ?></span>
 	             	<?php } ?>
@@ -560,7 +560,7 @@ function travelify_theloop_for_template_blog_image_medium() {
 		</div>
   			<div class="entry-meta-bar clearfix">
     			<div class="entry-meta">
-	    				<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
+	    				<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php echo esc_attr( get_the_time() ); ?>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?></a></span>
 	    				<?php if( has_category() ) { ?>
 	             		<span class="category"><?php the_category(', '); ?></span>
 	             	<?php } ?>
@@ -670,7 +670,7 @@ function travelify_theloop_for_template_blog_full_content() {
 
   			<div class="entry-meta-bar clearfix">
     			<div class="entry-meta">
-	    				<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
+	    				<span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php echo esc_attr( get_the_time() ); ?>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?></a></span>
 	    				<?php if( has_category() ) { ?>
 	             		<span class="category"><?php the_category(', '); ?></span>
 	             	<?php } ?>
