@@ -147,9 +147,6 @@ function travelify_theloop_for_archive() {
 	             		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'travelify' ), __( '1 Comment', 'travelify' ), __( '% Comments', 'travelify' ), '', __( 'Comments Off', 'travelify' ) ); ?></span>
 	             	<?php } ?>
     			</div><!-- .entry-meta -->
-    			<?php
-    			echo '<a class="readmore" href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">'.__( 'Read more', 'travelify' ).'</a>';
-    			?>
     		</div>
 
     		<?php do_action( 'travelify_after_post_meta' ); ?>
@@ -463,9 +460,6 @@ function travelify_theloop_for_template_blog_image_large() {
 	             		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'travelify' ), __( '1 Comment', 'travelify' ), __( '% Comments', 'travelify' ), '', __( 'Comments Off', 'travelify' ) ); ?></span>
 	             	<?php } ?>
     			</div><!-- .entry-meta -->
-    			<?php
-    			echo '<a class="readmore" href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">'.__( 'Read more', 'travelify' ).'</a>';
-    			?>
     		</div>
 
     		<?php do_action( 'travelify_after_post_meta' ); ?>
@@ -574,9 +568,6 @@ function travelify_theloop_for_template_blog_image_medium() {
 	             		<span class="comments"><?php comments_popup_link( __( 'No Comments', 'travelify' ), __( '1 Comment', 'travelify' ), __( '% Comments', 'travelify' ), '', __( 'Comments Off', 'travelify' ) ); ?></span>
 	             	<?php } ?>
     			</div><!-- .entry-meta -->
-    			<?php
-    			echo '<a class="readmore" href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">'.__( 'Read more', 'travelify' ).'</a>';
-    			?>
     		</div>
 
     		<?php do_action( 'travelify_after_post_meta' ); ?>
