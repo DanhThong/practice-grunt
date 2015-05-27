@@ -32,7 +32,7 @@ add_action( 'travelify_footer', 'travelify_footer_info', 30 );
  * function to show the footer info, copyright information
  */
 function travelify_footer_info() {
-   echo '<div class="copyright">'.__( 'Copyright &copy;', 'travelify' ).' '.date('Y').' Du lịch - Ẩm thực</div><!-- .copyright -->';
+   echo '<div class="copyright">'.__( 'Copyright &copy;', 'travelify' ).' '.date('Y').' Du lịch - Ẩm thực <i style="color:red">Website đang trong thời gian phát triển</i></div><!-- .copyright -->';
 }
 
 /****************************************************************************************/
