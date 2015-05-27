@@ -332,7 +332,7 @@ function travelify_featured_post_slider() {
 		'meta_key'    => 'show_on_home_slider',
 		'meta_value'  => 1,
 		'orderby'     => 'meta_id',
-		'order'       => 'ASC'
+		'order'       => 'DESC'
 	);
   	$data = query_posts($args);
   	if (have_posts()) :
