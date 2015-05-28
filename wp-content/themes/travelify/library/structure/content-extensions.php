@@ -714,6 +714,127 @@ endif;
 
 /****************************************************************************************/
 
+
+/****************************************************************************************/
+/**
+*   Add template for home page
+*   Show list like vnexpress.net
+*/
+
+if ( ! function_exists( 'travel_food_home_posts' ) ) :
+/**
+ * Fuction to show the content of page template blog image medium content.
+ */
+function travel_food_home_posts() {
+    global $post;
+
+    global $wp_query, $paged;
+    if( get_query_var( 'paged' ) ) {
+        $paged = get_query_var( 'paged' );
+    }
+    elseif( get_query_var( 'page' ) ) {
+        $paged = get_query_var( 'page' );
+    }
+    else {
+        $paged = 1;
+    }
+    $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged ) );
+    $temp_query = $wp_query;
+    $wp_query = null;
+    $wp_query = $blog_query;
+
+    if( $blog_query->have_posts() ) {
+        while( $blog_query->have_posts() ) {
+            $blog_query->the_post();
+
+            do_action( 'travelify_before_post' );
+?>
+<?php
+    // Check empty thumb to change class css
+    $class_style = "no-thumb";
+    if ( has_post_thumbnail() ) {
+        $class_style = "have-thumb";
+    }
+?>
+    <section id="post-<?php the_ID(); ?>" <?php post_class('travel-food-item'); ?>>
+        <article>
+        <div class="medium-wrap <?php echo $class_style; ?>" >
+            <?php do_action( 'travelify_before_post_header' ); ?>
+            <header class="entry-header">
+                <h2 class="entry-title">
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_title(); ?></a>
+                </h2><!-- .entry-title -->
+            </header>
+
+            <?php do_action( 'travelify_after_post_header' ); ?>
+
+            <?php do_action( 'travelify_before_post_content' ); ?>
+
+            <?php
+            if( has_post_thumbnail() ) {
+                $image = '';
+                $title_attribute = apply_filters( 'the_title', get_the_title( $post->ID ) );
+                $image .= '<figure class="post-featured-image">';
+                $image .= '<a href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">';
+                $image .= get_the_post_thumbnail( $post->ID, 'featured-medium', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) ).'</a>';
+                $image .= '</figure>';
+
+                echo $image;
+            }
+            ?>
+
+            <?php the_excerpt(); ?>
+
+
+            <?php do_action( 'travelify_after_post_content' ); ?>
+
+            <?php do_action( 'travelify_before_post_meta' ); ?>
+        </div>
+            <div class="entry-meta-bar clearfix">
+                <div class="entry-meta">
+                        <span class="date"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_time() ); ?>"><?php echo esc_attr( get_the_time() ); ?>&nbsp;<?php the_time( get_option( 'date_format' ) ); ?></a></span>
+                        <?php if( has_category() ) { ?>
+                    <?php } ?>
+                        <?php if ( comments_open() ) { ?>
+                        <span class="comments"><?php comments_popup_link( __( 'No Comments', 'travelify' ), __( '1 Comment', 'travelify' ), __( '% Comments', 'travelify' ), '', __( 'Comments Off', 'travelify' ) ); ?></span>
+                    <?php } ?>
+                </div><!-- .entry-meta -->
+            </div>
+
+            <?php do_action( 'travelify_after_post_meta' ); ?>
+        </article>
+    </section>
+<?php
+            do_action( 'travelify_after_post' );
+
+        }
+        if ( function_exists('wp_pagenavi' ) ) {
+            wp_pagenavi();
+        }
+        else {
+            if ( $wp_query->max_num_pages > 1 ) {
+            ?>
+                <ul class="default-wp-page clearfix">
+                    <li class="previous"><?php next_posts_link( __( '&laquo; Previous', 'travelify' ), $wp_query->max_num_pages ); ?></li>
+                    <li class="next"><?php previous_posts_link( __( 'Next &raquo;', 'travelify' ), $wp_query->max_num_pages ); ?></li>
+                </ul>
+                <?php
+            }
+        }
+    }
+    else {
+        ?>
+        <h1 class="entry-title"><?php _e( 'No Posts Found.', 'travelify' ); ?></h1>
+      <?php
+   }
+   $wp_query = $temp_query;
+    wp_reset_postdata();
+}
+endif;
+/****************************************************************************************/
+
+
+
 add_action( 'travelify_after_loop_content', 'travelify_next_previous', 5 );
 /**
  * Shows the next or previous posts

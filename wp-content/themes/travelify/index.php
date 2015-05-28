@@ -23,7 +23,10 @@
 		 *
 		 * travelify_content 10
 		 */
-		do_action( 'travelify_main_container' );
+		// TODO: Add custom templates post here
+		// Show list post of categories like vnexpress.net
+		//do_action( 'travelify_main_container' );
+		get_template_part( 'content','home' );
 	?>
 </div><!-- #container -->
 
