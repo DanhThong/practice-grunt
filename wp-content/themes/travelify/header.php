@@ -31,13 +31,13 @@
          */
         wp_head();
 
-        do_action( 'google_analytics' );
+        // do_action( 'google_analytics' );
     ?>
-
 </head>
 
 <body <?php body_class(); ?>>
     <?php
+    do_action( 'google_tag_manager' );
         /**
          * travelify_before hook
          */

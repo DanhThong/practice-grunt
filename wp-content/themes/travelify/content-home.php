@@ -30,6 +30,9 @@
          *
          * travelify_theloop 10
        */
+    ?>
+      <h1 class="page-title home-title">Cẩm nang du lịch mới nhất</h1>
+    <?php
       travel_food_home_posts();
 
       /**
