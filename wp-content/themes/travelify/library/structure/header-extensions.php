@@ -241,7 +241,8 @@ function travelify_headerdetails() {
    				travelify_pass_cycle_parameters();
    			if( function_exists( 'travelify_featured_post_slider' ) )
    				travelify_featured_post_slider();
-   		}
+   				// echo do_shortcode("[rev_slider slider-home]");
+   			}
    		}
 		else {
 			if( ( '' != travelify_header_title() ) || function_exists( 'bcn_display_list' ) ) {
