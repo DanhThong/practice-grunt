@@ -1,0 +1,22 @@
+.menu-category {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+.menu-category .menu li.menu-item {
+    font-size: 14px;
+    line-height: 40px;
+    border-bottom: #fff dotted 1px;
+}
+.menu-category .menu li.menu-item:last-child {
+    border-bottom: none;
+}
+.menu-category .menu li.menu-item a:before {
+    content: '\f429';
+    font-family: 'Genericons';
+    margin-right: 10px;
+    font-size: 10px;
+}
