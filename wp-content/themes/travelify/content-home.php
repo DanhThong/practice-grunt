@@ -31,7 +31,7 @@
          * travelify_theloop 10
        */
     ?>
-      <h1 class="page-title home-title">Cẩm nang du lịch mới nhất</h1>
+      <h2 class="page-title home-title">Khám phá các địa điểm du lịch</h2>
     <?php
       travel_food_home_posts();
 
@@ -56,4 +56,6 @@
 
 <div id="secondary">
     <?php get_sidebar( 'right' ); ?>
+    <h2 class="page-title home-title">Cẩm nang du lịch</h2>
+    <?php echo do_shortcode("[menu_category]");?>
 </div><!-- #secondary -->
