@@ -99,7 +99,7 @@
     color: #555;
 }
 .entry-title {
-    font: 24px 'Ubuntu', sans-serif;
+    font: 24px 'arial', sans-serif;
     line-height: 1.4em;
 }
 .entry-title,.entry-title a {
@@ -339,4 +339,17 @@ thead th,tfoot th,thead tr:hover th,tfoot tr:hover th {
 }
 .single .entry-meta-bar {
     padding-bottom: 10px;
+}
+
+#primary-home {
+    float: left;
+    width: 100%;
+    .travel-food-item {
+        width: 24%;
+        float: left;
+        margin: 0.5%;
+        height: 240px;
+        border: none !important;
+        padding: 0 !important;
+    }
 }

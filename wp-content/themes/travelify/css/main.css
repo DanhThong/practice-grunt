@@ -117,13 +117,18 @@ hr {
 /* line 75, ../sass/_common.scss */
 .container {
   margin: 0 auto;
-  max-width: 978px;
+  max-width: 1000px;
 }
 
 /* line 80, ../sass/_common.scss */
 ::selection {
   background: #57ad68;
   color: #fff;
+}
+
+/* line 84, ../sass/_common.scss */
+body.custom-background {
+  background-color: white !important;
 }
 
 /**
@@ -907,6 +912,13 @@ a.more-link:hover {
   height: auto;
 }
 
+/* Share social plugin */
+/* line 113, ../sass/_social.scss */
+.share-social {
+  line-height: 8px;
+  margin-top: 5px;
+}
+
 /* =Menu
 --------------------------------------------------------------*/
 /* line 3, ../sass/_menu.scss */
@@ -914,16 +926,17 @@ a.more-link:hover {
   cursor: pointer;
   color: #0878c0;
   position: relative;
+  background-color: lightgrey;
 }
 
-/* line 8, ../sass/_menu.scss */
+/* line 9, ../sass/_menu.scss */
 #main-nav li {
   float: left;
   position: relative;
   padding: 0;
 }
 
-/* line 13, ../sass/_menu.scss */
+/* line 14, ../sass/_menu.scss */
 #main-nav a {
   color: #0878c0;
   display: block;
@@ -933,27 +946,27 @@ a.more-link:hover {
   height: 32px;
   border-top: 3px solid transparent;
   font-weight: 700;
-  border-left: 1px solid #EBEEF2;
+  /*border-left: 1px solid #EBEEF2;*/
 }
 
-/* line 24, ../sass/_menu.scss */
+/* line 25, ../sass/_menu.scss */
 #main-nav a:hover, #main-nav ul li.current-menu-item a, #main-nav ul li.current_page_ancestor a, #main-nav ul li.current-menu-ancestor a, #main-nav ul li.current_page_item a, #main-nav ul li:hover > a {
   opacity: 1;
   border-top: 3px solid #0878c0;
 }
 
-/* line 28, ../sass/_menu.scss */
+/* line 29, ../sass/_menu.scss */
 #main-nav ul ul {
   text-shadow: none;
 }
 
-/* line 31, ../sass/_menu.scss */
+/* line 32, ../sass/_menu.scss */
 #main-nav li:hover > a, #main-nav ul ul :hover > a, #main-nav a:focus {
   color: #0878c0;
 }
 
 /* Dropdown */
-/* line 35, ../sass/_menu.scss */
+/* line 36, ../sass/_menu.scss */
 #main-nav ul li ul,
 #main-nav ul li:hover ul ul,
 #main-nav ul ul li:hover ul ul,
@@ -963,7 +976,7 @@ a.more-link:hover {
   z-index: 9999;
 }
 
-/* line 43, ../sass/_menu.scss */
+/* line 44, ../sass/_menu.scss */
 #main-nav ul li:hover ul,
 #main-nav ul ul li:hover ul,
 #main-nav ul ul ul li:hover ul,
@@ -972,7 +985,7 @@ a.more-link:hover {
   display: block;
 }
 
-/* line 50, ../sass/_menu.scss */
+/* line 51, ../sass/_menu.scss */
 #main-nav ul li ul {
   position: absolute;
   background-color: #fff;
@@ -981,7 +994,7 @@ a.more-link:hover {
   width: 190px;
 }
 
-/* line 57, ../sass/_menu.scss */
+/* line 58, ../sass/_menu.scss */
 #main-nav ul li ul li {
   float: none;
   border-bottom: 1px solid #EAEAEA;
@@ -990,7 +1003,7 @@ a.more-link:hover {
   padding: 0;
 }
 
-/* line 64, ../sass/_menu.scss */
+/* line 65, ../sass/_menu.scss */
 #main-nav ul li ul li a,
 #main-nav ul li.current-menu-item ul li a,
 #main-nav ul li ul li.current-menu-item a,
@@ -1011,14 +1024,14 @@ a.more-link:hover {
   box-shadow: none;
 }
 
-/* line 83, ../sass/_menu.scss */
+/* line 84, ../sass/_menu.scss */
 #main-nav ul li.current_page_item ul li a {
   background: #fff;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 91, ../sass/_menu.scss */
+/* line 92, ../sass/_menu.scss */
 #main-nav ul li ul li a:hover, #main-nav ul li ul li:hover > a, #main-nav ul li.current-menu-item ul li a:hover {
   background-color: #F9F9F9;
   -webkit-box-shadow: none;
@@ -1026,18 +1039,18 @@ a.more-link:hover {
   color: #439f55;
 }
 
-/* line 97, ../sass/_menu.scss */
+/* line 98, ../sass/_menu.scss */
 #main-nav ul li ul li ul {
   left: 188px;
   top: 0px;
 }
 
-/* line 101, ../sass/_menu.scss */
+/* line 102, ../sass/_menu.scss */
 #main-nav select {
   display: none;
 }
 
-/* line 104, ../sass/_menu.scss */
+/* line 105, ../sass/_menu.scss */
 .default-menu {
   display: none;
 }
@@ -1272,7 +1285,7 @@ a.more-link:hover {
 
 /* line 101, ../sass/_content.scss */
 .entry-title {
-  font: 24px 'Ubuntu', sans-serif;
+  font: 24px 'arial', sans-serif;
   line-height: 1.4em;
 }
 
@@ -1522,8 +1535,8 @@ thead th, tfoot th, thead tr:hover th, tfoot tr:hover th {
 /* line 273, ../sass/_content.scss */
 #secondary {
   float: left;
-  margin-left: 3.06%;
-  width: 31.28%;
+  margin-left: 2.06%;
+  width: 32.28%;
 }
 
 /* Left Sidebar Template */
@@ -1619,6 +1632,21 @@ thead th, tfoot th, thead tr:hover th, tfoot tr:hover th {
 /* line 340, ../sass/_content.scss */
 .single .entry-meta-bar {
   padding-bottom: 10px;
+}
+
+/* line 344, ../sass/_content.scss */
+#primary-home {
+  float: left;
+  width: 100%;
+}
+/* line 347, ../sass/_content.scss */
+#primary-home .travel-food-item {
+  width: 24%;
+  float: left;
+  margin: 0.5%;
+  height: 240px;
+  border: none !important;
+  padding: 0 !important;
 }
 
 /* =Attachments
@@ -2433,7 +2461,7 @@ article {
 
 /* line 102, ../sass/_footer.scss */
 #main {
-  padding: 20px 2.5%;
+  padding: 10px 0px;
 }
 
 /* =WooCommerce
@@ -2839,7 +2867,7 @@ article {
   width: 48%;
   float: left;
   margin: 1%;
-  height: 230px;
+  height: 240px;
   border: none !important;
   padding: 0 !important;
 }
@@ -2849,7 +2877,7 @@ article {
 }
 /* line 11, ../sass/_home_post.scss */
 .travel-food-item .medium-wrap {
-  height: 180px;
+  height: 170px;
   overflow-y: hidden;
 }
 /* line 15, ../sass/_home_post.scss */
@@ -2858,44 +2886,63 @@ article {
 }
 /* line 17, ../sass/_home_post.scss */
 .travel-food-item .have-thumb .entry-header {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  width: 95%;
-  margin-top: 5px;
+  background: white;
+  width: 100%;
+  float: left;
 }
-/* line 22, ../sass/_home_post.scss */
-.travel-food-item .have-thumb .entry-header h2 {
-  padding: 5px !important;
+/* line 21, ../sass/_home_post.scss */
+.travel-food-item .have-thumb .entry-header h3 {
+  padding: 0px !important;
+  height: 36px;
+  overflow: hidden;
 }
-/* line 24, ../sass/_home_post.scss */
-.travel-food-item .have-thumb .entry-header h2 a {
-  color: white !important;
+/* line 25, ../sass/_home_post.scss */
+.travel-food-item .have-thumb .entry-header h3 a {
+  color: black;
   margin: 0px;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0px;
   text-shadow: none;
-  margin-left: 5px;
+  margin-left: 0px;
+  line-height: 18px;
+  font-weight: 700;
 }
-/* line 35, ../sass/_home_post.scss */
+/* line 38, ../sass/_home_post.scss */
 .travel-food-item .post-featured-image {
   width: 100%;
   float: left;
   margin: 0;
   margin-bottom: 5px;
   margin-top: 5px;
+  overflow: hidden;
 }
-/* line 41, ../sass/_home_post.scss */
+/* line 45, ../sass/_home_post.scss */
 .travel-food-item .post-featured-image img {
   width: 100%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  max-width: 250px;
+  height: 120px;
+}
+/* line 50, ../sass/_home_post.scss */
+.travel-food-item .post-featured-image img:hover {
+  -webkit-transform: scale(1.5) rotate(0deg);
+  -moz-transform: scale(1.5) rotate(0deg);
+  -ms-transform: scale(1.5) rotate(0deg);
+  -o-transform: scale(1.5) rotate(0deg);
+  transform: scale(1.5) rotate(0deg);
 }
 
-/* line 46, ../sass/_home_post.scss */
+/* line 56, ../sass/_home_post.scss */
 .home-title {
   float: none !important;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 51, ../sass/_home_post.scss */
+  /* line 61, ../sass/_home_post.scss */
   .travel-food-item {
     width: 96%;
     margin: 2%;

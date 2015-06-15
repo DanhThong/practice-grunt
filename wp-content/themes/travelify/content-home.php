@@ -12,7 +12,7 @@
    do_action( 'travelify_before_primary' );
 ?>
 
-<div id="primary" class="no-margin-left">
+<div id="primary-home" class="no-margin-left">
    <?php
       /**
        * travelify_before_loop_content
@@ -52,6 +52,7 @@
     * travelify_after_primary
     */
    do_action( 'travelify_after_primary' );
+   /*
 ?>
 
 <div id="secondary">

@@ -9,26 +9,28 @@
         line-height: 18px;
     }
     .medium-wrap {
-        height: 180px;
+        height: 170px;
         overflow-y: hidden;
     }
     .have-thumb {
         position: relative;
         .entry-header {
-            position: absolute;
-            background: rgba(0,0,0,.5);
-            width: 95%;
-            margin-top: 5px;
-            z-index: 100;
-            h2 {
-                padding: 5px!important;
+            background: white;
+            width: 100%;
+            float: left;
+            h3 {
+                padding: 0px!important;
+                height: 36px;
+                overflow: hidden;
                 a {
-                    color: white !important;
+                    color: black;
                     margin: 0px;
-                    font-size: 14px;
+                    font-size: 12px;
                     letter-spacing: 0px;
                     text-shadow: none;
-                    margin-left: 5px;
+                    margin-left: 0px;
+                    line-height: 18px;
+                    font-weight: 700;
                 }
             }
         }
@@ -43,8 +45,10 @@
         img {
             width: 100%;
             @include transition(all 1s ease);
+            max-width: 250px;
+            height: 120px;
             &:hover {
-                @include transform(scale(1.25) rotate(5deg));
+                @include transform(scale(1.5) rotate(0deg));
             }
         }
     }

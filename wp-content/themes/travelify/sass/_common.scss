@@ -74,12 +74,15 @@ hr {
 }
 .container {
     margin: 0 auto;
-    max-width: 978px;
+    max-width: 1000px;
 }
 
 ::selection {
     background: #57ad68;
     color: #fff;
+}
+body.custom-background {
+    background-color: white!important;
 }
 
 /**
