@@ -1,2 +1,2 @@
-<div class="fb-like" data-href="<?php echo $url;?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-<div class="g-plusone" data-size="medium" data-href="<?php echo $url;?>"></div>
+<div class="fb-like" data-href="<?php echo $url;?>" data-layout="<?php echo $size['fb'];?>" data-action="like" data-show-faces="true" data-share="true"></div>
+<div class="g-plusone" data-annotation="<?php echo $size['gg'];?>" data-href="<?php echo $url;?>" data-size="medium"></div>
