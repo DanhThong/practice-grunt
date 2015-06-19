@@ -743,16 +743,26 @@ function travel_food_home_posts() {
     else {
         $paged = 1;
     }
-    $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged ) );
+    $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged, 'cat' => 6 ) );
     $temp_query = $wp_query;
     $wp_query = null;
     $wp_query = $blog_query;
 
     if( $blog_query->have_posts() ) {
+        $i = 1;
         while( $blog_query->have_posts() ) {
             $blog_query->the_post();
 
             do_action( 'travelify_before_post' );
+        $class = '';
+        if ($i == 1){
+            $class = "item-left";
+        }
+        if ($i%4 == 0){
+            $class = "item-right";
+            $i = 0;
+        }
+        $i++;
 ?>
 <?php
     // Check empty thumb to change class css
@@ -761,7 +771,7 @@ function travel_food_home_posts() {
         $class_style = "have-thumb";
     }
 ?>
-    <section id="post-<?php the_ID(); ?>" <?php post_class('travel-food-item'); ?>>
+    <section id="post-<?php the_ID(); ?>" <?php post_class('travel-food-item '.$class); ?>>
         <article>
         <div class="medium-wrap <?php echo $class_style; ?>" >
             <?php //the_excerpt(); ?>
@@ -845,7 +855,8 @@ add_action( 'travelify_after_loop_content', 'travelify_next_previous', 5 );
  * Shows the next or previous posts
  */
 function travelify_next_previous() {
-	if( is_archive() || is_home() || is_search() ) {
+    // TODO: thongdd remove is_home()
+	if( is_archive() || is_search() ) {
 		/**
 		 * Checking WP-PageNaviplugin exist
 		 */

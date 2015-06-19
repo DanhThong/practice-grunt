@@ -378,7 +378,6 @@ function travelify_customizer_css() {
     a { color: <?php echo get_theme_mod( 'travelify_link_color', '#57AD68' ); ?>; }
     #site-title a { color: <?php echo get_theme_mod( 'travelify_logo_color' ); ?>; }
     #site-title a:hover { color: <?php echo get_theme_mod( 'travelify_logo_hover_color' ); ?>; }
-    .wrapper { background: <?php echo get_theme_mod( 'travelify_wrapper_color', '#F8F8F8' ); ?>; }
     .social-icons ul li a { color: <?php echo get_theme_mod( 'travelify_social_color', '#d0d0d0' ); ?>; }
     .entry-content { color: <?php echo get_theme_mod( 'travelify_entry_color', '#1D1D1D' ); ?>; }
     input[type="reset"], input[type="button"], input[type="submit"], .entry-meta-bar .readmore, #controllers a:hover, #controllers a.active, .pagination span, .pagination a:hover span, .wp-pagenavi .current, .wp-pagenavi a:hover { background: <?php echo get_theme_mod( 'travelify_element_color', '#57ad68' ); ?>; border-color: <?php echo get_theme_mod( 'travelify_element_color', '#57ad68' ); ?> !important; }

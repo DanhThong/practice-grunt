@@ -1,9 +1,6 @@
 
 /* =Content
 -----------------------------------------------*/
-#main {
-    padding: 30px 0 10px;
-}
 #main form input,#main form textarea {
     @include boxsize(border-box);
 }
@@ -345,10 +342,10 @@ thead th,tfoot th,thead tr:hover th,tfoot tr:hover th {
     float: left;
     width: 100%;
     .travel-food-item {
-        width: 24%;
+        width: 24.25%;
         float: left;
         margin: 0.5%;
-        height: 240px;
+        height: 250px;
         border: none !important;
         padding: 0 !important;
     }

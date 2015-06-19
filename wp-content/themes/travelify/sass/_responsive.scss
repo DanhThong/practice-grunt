@@ -188,6 +188,31 @@
         text-align: center;
         float: none;
     }
+    #primary-home .travel-food-item {
+        width: 99%;
+        float: left;
+        margin: 0.5%;
+        height: 240px;
+        border: none !important;
+        padding: 0 !important;
+    }
+    .travel-food-item .post-featured-image img {
+        width: 100%;
+        @include transition(all 1s ease);
+        max-width: none;
+        height: auto;
+    }
+    .saleoff-news {
+        float: left;
+        width: 100%;
+        background-color: white;
+        height: auto;
+        margin-top: 10px;
+    }
+    .featured-slider {
+        width: 100%;
+        float: left;
+    }
 }
 
 /* All Mobile landscape size and All Mini Tablet Portrait size smaller than standard 768 and larger than 480 (devices and browsers) */

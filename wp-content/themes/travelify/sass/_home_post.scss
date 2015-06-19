@@ -2,14 +2,14 @@
     width: 48%;
     float: left;
     margin: 1%;
-    height: 240px;
+    height: 250px;
     border: none!important;
     padding: 0!important;
     article {
         line-height: 18px;
     }
     .medium-wrap {
-        height: 170px;
+        height: 180px;
         overflow-y: hidden;
     }
     .have-thumb {
@@ -48,7 +48,16 @@
             max-width: 250px;
             height: 120px;
             &:hover {
-                @include transform(scale(1.5) rotate(0deg));
+                @include transform(scale(1.25) rotate(5deg));
+            }
+        }
+    }
+    article {
+        &:hover {
+            -webkit-box-shadow: 0 1px 2px rgba(255, 145, 0, 1);
+            box-shadow: 1px 2px 4px rgba(255, 145, 0, 1);
+            .entry-title a {
+                color: rgba(255, 145, 0, 1)!important;
             }
         }
     }
@@ -56,7 +65,12 @@
 .home-title {
     float: none!important;
 }
-
+.item-left {
+    margin-left: 0px!important;
+}
+.item-right {
+    margin-right: 0px!important;
+}
 @media only screen and (max-width: 767px) {
     .travel-food-item {
         width: 96%;
