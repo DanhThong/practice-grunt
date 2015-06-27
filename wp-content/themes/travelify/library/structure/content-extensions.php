@@ -730,7 +730,7 @@ if ( ! function_exists( 'travel_food_home_posts' ) ) :
 /**
  * Fuction to show the content of page template blog image medium content.
  */
-function travel_food_home_posts() {
+function travel_food_home_posts($cat = 6) {
     global $post;
 
     global $wp_query, $paged;
@@ -743,7 +743,7 @@ function travel_food_home_posts() {
     else {
         $paged = 1;
     }
-    $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged, 'cat' => 6 ) );
+    $blog_query = new WP_Query( array( 'post_type' => 'post', 'paged' => $paged, 'cat' => $cat ) );
     $temp_query = $wp_query;
     $wp_query = null;
     $wp_query = $blog_query;

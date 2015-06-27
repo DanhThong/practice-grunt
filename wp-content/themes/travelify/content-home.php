@@ -31,9 +31,24 @@
          * travelify_theloop 10
        */
     ?>
-      <h2 class="page-title home-title">Khám phá các địa điểm du lịch</h2>
+    <h2 class="page-title home-title">Khám phá các địa điểm du lịch</h2>
     <?php
-      travel_food_home_posts();
+      travel_food_home_posts(6);
+
+      /**
+       * travelify_after_loop_content
+         *
+         * HOOKED_FUNCTION_NAME PRIORITY
+         *
+         * travelify_next_previous 5
+         * travelify_loop_after 10
+       */
+      do_action( 'travelify_after_loop_content' );
+   ?>
+   <div class="clearfix"></div>
+    <h2 class="page-title home-title">Ngon & Lành</h2>
+    <?php
+      travel_food_home_posts(14);
 
       /**
        * travelify_after_loop_content
