@@ -42,7 +42,6 @@ function travelify_scripts_styles_method() {
      */
     wp_register_script( 'jquery_cycle', get_template_directory_uri() . '/library/js/jquery.cycle.all.min.js', array( 'jquery' ), '2.9999.5', true );
 
-  wp_register_style( 'google_font_ubuntu', '//fonts.googleapis.com/css?family=Ubuntu' );
 
 
     /**
@@ -53,9 +52,7 @@ function travelify_scripts_styles_method() {
         wp_enqueue_script( 'travelify_slider', get_template_directory_uri() . '/library/js/slider-settings.min.js', array( 'jquery_cycle' ), false, true );
     }
 
-  wp_enqueue_script( 'theme_functions', get_template_directory_uri() . '/library/js/functions.min.js', array( 'jquery' ) );
-
-  wp_enqueue_style( 'google_font_ubuntu' );
+    wp_enqueue_script( 'theme_functions', get_template_directory_uri() . '/library/js/functions.min.js', array( 'jquery' ) );
 
    /**
     * Browser specific queuing i.e

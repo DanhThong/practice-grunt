@@ -123,7 +123,7 @@ function add_google_analytics() {
 	</script>";
 	echo $script;
 }
-add_action('google_analytics', 'add_google_analytics' );
+// add_action('google_analytics', 'add_google_analytics' );
 
 function add_google_tag_manager() {
 	$script = "
@@ -140,5 +140,9 @@ function add_google_tag_manager() {
 	echo $script;
 }
 add_action('google_tag_manager', 'add_google_tag_manager' );
+
+add_filter( 'script_loader_tag', function ( $tag, $handle ) {
+    return str_replace( ' src', ' defer="defer" src', $tag );
+}, 10, 2 );
 
 ?>

@@ -48,7 +48,7 @@ embed,iframe,object {
 -----------------------------------------------*/
 body,input,textarea,article {
     color: #1d1d1d;
-    font: 12px Helvetica, sans-serif;
+    font: 12px 'Arial';
     font-weight: 400;
     line-height: 24px;
     word-wrap: break-word;
@@ -79,6 +79,7 @@ hr {
 }
 body.custom-background {
     background-color: #E9EAED!important;
+    /*background: url(../images/background.jpg) fixed;*/
 }
 
 .featured-wrap, #main-nav {

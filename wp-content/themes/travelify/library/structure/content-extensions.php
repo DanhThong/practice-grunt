@@ -124,9 +124,9 @@ function travelify_theloop_for_archive() {
 	  		}
   			?>
 			<header class="entry-header">
-    			<h2 class="entry-title">
+    			<h1 class="entry-title">
     				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();?>"><?php the_title(); ?></a>
-    			</h2><!-- .entry-title -->
+    			</h1><!-- .entry-title -->
   			</header>
 
   			<div class="entry-content clearfix">
@@ -259,9 +259,9 @@ function travelify_theloop_for_single() {
 			<?php do_action( 'travelify_before_post_header' ); ?>
 
 			<header class="entry-header">
-    			<h2 class="entry-title">
+    			<h1 class="entry-title">
     				<?php the_title(); ?>
-    			</h2><!-- .entry-title -->
+    			</h1><!-- .entry-title -->
   		</header>
 
   		<?php do_action( 'travelify_after_post_header' ); ?>
@@ -783,7 +783,7 @@ function travel_food_home_posts($cat = 6) {
                 $title_attribute = apply_filters( 'the_title', get_the_title( $post->ID ) );
                 $image .= '<figure class="post-featured-image">';
                 $image .= '<a href="' . get_permalink() . '" title="'.the_title( '', '', false ).'">';
-                $image .= get_the_post_thumbnail( $post->ID, 'featured-medium', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) ).'</a>';
+                $image .= get_the_post_thumbnail( $post->ID, 'thumbnail', array( 'title' => esc_attr( $title_attribute ), 'alt' => esc_attr( $title_attribute ) ) ).'</a>';
                 $image .= '</figure>';
 
                 echo $image;
