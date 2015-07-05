@@ -894,12 +894,14 @@ function travelify_next_previous_post_link() {
 		<?php
 		}
 		else {
+            /*
 		?>
 			<ul class="default-wp-page clearfix">
 				<li class="previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'travelify' ) . '</span> %title' ); ?></li>
 				<li class="next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'travelify' ) . '</span>' ); ?></li>
 			</ul>
 		<?php
+        */
 		}
 	}
 }
