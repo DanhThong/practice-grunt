@@ -354,3 +354,19 @@ thead th,tfoot th,thead tr:hover th,tfoot tr:hover th {
 #content h2 a{
     color: black;
 }
+#content .entry-content h2{
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#content .entry-content h3{
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
