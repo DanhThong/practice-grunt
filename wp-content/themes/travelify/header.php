@@ -32,6 +32,7 @@
         wp_head();
 
         // do_action( 'google_analytics' );
+        do_action( 'add_google_authorship' )
     ?>
 </head>
 
