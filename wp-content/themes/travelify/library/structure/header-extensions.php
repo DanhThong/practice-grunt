@@ -14,6 +14,10 @@ function travelify_add_meta() {
 ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<?php if (  (is_home()) || (is_front_page())  ) { ?>
+<meta name="description" content="Cẩm nang du lịch, thông tin du lịch các vùng miền Việt Nam. Những món ngon khi du lịch" />
+<meta name="keywords" content="Cẩm nang du lịch, du lich vung mien, du lich viet nam, mon ngon ba mien, dac san vung mien, du lich am thuc" />
+<?php } ?>
 <?php
 }
 
