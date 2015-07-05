@@ -140,9 +140,17 @@ function add_google_tag_manager() {
 	echo $script;
 }
 add_action('google_tag_manager', 'add_google_tag_manager' );
-
-add_filter( 'script_loader_tag', function ( $tag, $handle ) {
-    return str_replace( ' src', ' defer="defer" src', $tag );
+if ( ! is_admin() ) {
+add_filter( 'script_loader_tag',function ( $tag, $handle ) {
+	if ( ! is_admin() ) {
+    	return str_replace( ' src', ' defer="defer" src', $tag );
+    }
 }, 10, 2 );
+}
+
+function add_google_authorship() {
+	echo "<link href='https://plus.google.com/u/0/117293839239740868050' rel='author'>";
+}
+add_action('add_google_authorship', 'add_google_authorship' );
 
 ?>
