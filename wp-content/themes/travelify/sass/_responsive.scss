@@ -101,7 +101,7 @@
         display: block;
         width: 100%;
         border: none;
-        font: 14px 'Arial', sans-serif;
+        font: 14px 'HelvetIns', sans-serif;
         color: #555;
         height: 24px;
     }
@@ -212,6 +212,9 @@
     .featured-slider {
         width: 100%;
         float: left;
+    }
+    #mega-menu-wrap-primary {
+        z-index: 9999;
     }
 }
 

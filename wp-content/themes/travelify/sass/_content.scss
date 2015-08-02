@@ -86,7 +86,7 @@
     padding: 20px 0;
 }
 .page-title {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     color: #555;
     font-weight: normal;
@@ -97,13 +97,13 @@
     color: #555;
 }
 .entry-title {
-    font: 24px 'arial', sans-serif;
+    font: 20px 'AvoBold', sans-serif;
     line-height: 1.4em;
 }
 .entry-title,.entry-title a {
     color: #1b1e1f;
     letter-spacing: -1px;
-    font-size: 18px;
+    font-size: 20px;
     text-shadow: 0 1px 0 #fff;
     display: block;
     margin-top: 10px;
@@ -113,6 +113,7 @@
 .page h2.entry-title {
     padding-left: 2.5%;
     padding-right: 2.5%;
+    color: $main-color;
 }
 .single-attachment .entry-title {
     margin: 0 2.5%;
@@ -155,7 +156,7 @@
 .entry-meta .comments:before,
 .tags:before,
 .back-to-top a:before {
-    font-family: 'Genericons';
+    font-family: 'Avo';
     font-size: 18px;
     vertical-align: bottom;
     padding-right: 3px;
@@ -166,19 +167,19 @@
     *display: inline;
 }
 .entry-meta .author:before{
-    content: '\f304';
+    /*content: '\f304';*/
 }
 .entry-meta .date:before{
-    content: '\f303';
+    /*content: '\f303';*/
 }
 .entry-meta .category:before{
-    content: '\f301';
+    /*content: '\f301';*/
 }
 .entry-meta .comments:before{
-    content: '\f300';
+    /*content: '\f300';*/
 }
 .tags:before{
-    content: '\f302';
+    /*content: '\f302';*/
     font-size: 18px;
 }
 .tags {
@@ -357,16 +358,18 @@ thead th,tfoot th,thead tr:hover th,tfoot tr:hover th {
 #content .entry-content h2{
     font-size: 16px;
     line-height: 24px;
-    color: black;
-    font-weight: 700;
+    color: $main-color;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 #content .entry-content h3{
     font-size: 14px;
     line-height: 18px;
-    color: black;
+    color: $main-color;
     font-weight: bold;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+.hide {
+    display: none;
 }
